@@ -5,11 +5,11 @@
     <table>
         <tr>
             <td>ID</td>
-            <td><input type="number" name="id" value="<?php echo $data['row']['product_id']; ?>" required></td>
+            <td><input type="id" name="id" value="<?php echo $data['row']['product_id']; ?>" required></td>
         </tr>
         <tr>
             <td>JENIS</td>
-            <td><input type="text" name="jenis" value="<?php echo $data['row']['product_jenis']; ?>" required"></td>
+            <td><input type="text" name="jenis" value="<?php echo $data['row']['product_jenis']; ?>" required></td>
         </tr>
         <tr>
             <td>UMUR</td>

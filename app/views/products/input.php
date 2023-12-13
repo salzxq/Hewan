@@ -8,7 +8,7 @@
         </tr>
         <tr>
             <td>JENIS</td>
-            <td><input type="text" name="password" required></td>
+            <td><input type="text" name="jenis" required></td>
         </tr>
         <tr>
             <td>UMUR</td>
