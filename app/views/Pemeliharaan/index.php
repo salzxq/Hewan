@@ -1,4 +1,4 @@
-<h2>Users</h2>
+<h2>PEMELIHARAAN</h2>
 
 <a href="<?php echo URL; ?>/pemeliharaan/input" class="btn">Input Pemeliharaan</a>
 
