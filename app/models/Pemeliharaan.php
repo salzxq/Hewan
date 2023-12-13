@@ -131,7 +131,6 @@ class Pemeliharaan extends Model
             }
 
             $stmt->bindParam(":hewan_pem", $hewan_pem);
-            $stmt->bindParam(":gambar", $gambarName);
             $stmt->bindParam(":catatan", $catatan);
             $stmt->bindParam(":estimasi", $estimasi);
             $stmt->bindParam(":harga_pem", $harga_pem);
