@@ -48,6 +48,11 @@
 					</a>
 				</li>
 				<li>
+					<a href="<?php echo URL; ?>/pemilikternak">
+						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Pemilik Ternak
+					</a>
+				</li>
+				<li>
 					<a href="<?php echo URL; ?>/products">
 						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Products
 					</a>
