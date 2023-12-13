@@ -38,6 +38,11 @@
 					</a>
 				</li>
 				<li>
+					<a href="<?php echo URL; ?>/pemeliharaan">
+						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Pemeliharaan
+					</a>
+				</li>
+				<li>
 					<a href="<?php echo URL; ?>/posts">
 						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Post
 					</a>
