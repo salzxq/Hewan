@@ -16,7 +16,7 @@ class Config
           date_default_timezone_set("Asia/Jakarta");
 
           // Url dan Assets
-          define("URL", "http://localhost/Hewan");
+          define("URL", "http://localhost/HEWAN");
           define("AST", URL . "/layouts/assets");
 
           define("ROOT", dirname(__DIR__) . DIRECTORY_SEPARATOR);
