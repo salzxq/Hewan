@@ -54,14 +54,55 @@ class Pemeliharaan extends Model
             return $this->select($stmt);
       }
 
-      public function update()
+     //  public function update()
+     //  {
+     //      $hewan_pem = $_POST['hewan_pem'];
+     //      $gambarLama=$_POST['gambar_pem'];
+     //      $gambar = $_FILES['gambar'];
+     //      $catatan = $_POST['catatan'];
+     //      $estimasi = $_POST['estimasi'];
+     //      $harga_pem = $_POST['harga_pem'];
+     //        $id = $_POST['id'];
+            
+     //        if ($gambar['size'] > 0) {
+     //              $uploadDir = 'public/img/';
+     //              $gambarName = uniqid() . '_' . $gambar['name'];
+     //              $gambarPath = $uploadDir . $gambarName;
+     //              unlink($uploadDir . $gambarLama);
+     //              move_uploaded_file($gambar['tmp_name'], $gambarPath);            
+     //        }
+
+     //        if ($gambar['size'] > 0) {
+     //              $sql = "UPDATE tb_pemeliharaan
+     //                    SET hewan_pem=:hewan_pem, gambar=:gambar, catatan=:catatan, estimasi=:estimasi, harga_pem=:harga_pem
+     //                    WHERE id_pemeliharaan=:id_pemeliharaan";
+     //        } else {
+     //              $sql = "UPDATE tb_pemeliharaan
+     //                    SET hewan_pem=:hewan_pem, catatan=:catatan, estimasi=:estimasi, harga_pem=:harga_pem
+     //                    WHERE id_pemeliharaan=:id_pemeliharaan";
+     //        }
+
+     //        $stmt = $this->db->prepare($sql);
+
+     //        $stmt->bindParam(":hewan_pem", $hewan_pem);
+     //        if ($gambar['size'] > 0) {
+     //              $stmt->bindParam(":gambar", $gambarName);
+     //        }
+     //        $catatan = $_POST['catatan'];
+     //        $estimasi = $_POST['estimasi'];
+     //        $harga_pem = $_POST['harga_pem'];
+     //        $stmt->bindParam(":id_pemeliharaan", $id);
+
+     //        $stmt->execute();
+     //  }
+     public function update()
       {
-          $hewan_pem = $_POST['hewan_pem'];
-          $gambarLama=$_POST['gambar_pem'];
-          $gambar = $_FILES['gambar'];
-          $catatan = $_POST['catatan'];
-          $estimasi = $_POST['estimasi'];
-          $harga_pem = $_POST['harga_pem'];
+            $hewan_pem = $_POST['hewan_pem'];
+            $gambarLama=$_POST['gambar_pem'];
+            $gambar = $_FILES['gambar'];
+            $catatan = $_POST['catatan'];
+            $estimasi = $_POST['estimasi'];
+            $harga_pem = $_POST['harga_pem'];
             $id = $_POST['id'];
             
             if ($gambar['size'] > 0) {
@@ -88,9 +129,12 @@ class Pemeliharaan extends Model
             if ($gambar['size'] > 0) {
                   $stmt->bindParam(":gambar", $gambarName);
             }
-            $catatan = $_POST['catatan'];
-            $estimasi = $_POST['estimasi'];
-            $harga_pem = $_POST['harga_pem'];
+
+            $stmt->bindParam(":hewan_pem", $hewan_pem);
+            $stmt->bindParam(":gambar", $gambarName);
+            $stmt->bindParam(":catatan", $catatan);
+            $stmt->bindParam(":estimasi", $estimasi);
+            $stmt->bindParam(":harga_pem", $harga_pem);
             $stmt->bindParam(":id_pemeliharaan", $id);
 
             $stmt->execute();
